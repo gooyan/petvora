@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — PetVora</title>
+<meta name="description" content="About PetVora — our mission to keep pets safe and healthy through smart wearable technology.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600&family=Source+Serif+4:ital,opsz,wght@1,8..60,400;1,8..60,500&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="sticky">
+  <div class="nav-inner">
+    <a class="brand" href="/"><span class="paw">🐾</span><b>PetVora</b></a>
+    <div class="nav-links">
+      <a href="index.html#features">Features</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </div>
+</nav>
+
+<section class="block">
+  <div class="wrap-read doc">
+    <h1 class="doc-title">About PetVora</h1>
+    <p class="updated">Smart wearables for the pets you love</p>
+
+    <p>PetVora is a smart wearable brand for dogs and cats. We build lightweight, connected collars and a companion mobile app that bring together four things every pet parent cares about: <strong>where your pet is</strong>, <strong>whether they're safe</strong>, <strong>how active they are</strong>, and <strong>how they're feeling</strong>.</p>
+
+    <div class="insight-box">
+      Our mission is simple: give every pet parent the confidence that comes from truly understanding their companion — and the early warning that can make all the difference.
+    </div>
+
+    <h2>What we make</h2>
+    <p>The PetVora collar pairs with the PetVora app to deliver:</p>
+    <ul>
+      <li><strong>Location</strong> — real-time GPS tracking and location history.</li>
+      <li><strong>Safety</strong> — customizable safe zones with instant boundary alerts.</li>
+      <li><strong>Activity</strong> — daily steps, active minutes, rest, and goal tracking.</li>
+      <li><strong>Health</strong> — continuous monitoring of key wellbeing signals, with trends over time.</li>
+    </ul>
+
+    <h2>Why we built it</h2>
+    <p>Pets can't tell us when something is wrong, and they can't call home when they're lost. PetVora was created to close that gap — turning continuous, gentle monitoring into clear, actionable insight so that small problems get noticed early and lost pets get found fast.</p>
+
+    <h2>Privacy first</h2>
+    <p>Your pet's data — and your data — belong to you. We collect only what's needed to make PetVora work, we're transparent about how it's used, and we never sell personal information. Read the full details in our <a href="privacy.html">Privacy Policy</a>.</p>
+
+    <h2>Contact &amp; support</h2>
+    <p>We're here to help. For product questions, support, or any privacy request, reach us at:</p>
+    <ul>
+      <li>Support: <a href="mailto:support@petvora.com">support@petvora.com</a></li>
+      <li>Privacy: <a href="mailto:privacy@petvora.com">privacy@petvora.com</a></li>
+      <li>Web: <a href="https://petvora.com">petvora.com</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <div class="brand"><span class="paw">🐾</span><b>PetVora</b></div>
+    <div class="foot-links">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="mailto:support@petvora.com">Contact</a>
+    </div>
+    <div class="foot-meta">© 2026 PetVora. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
